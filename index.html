@@ -7,66 +7,59 @@
     
     <link rel="stylesheet" href="icons/font-mfizz.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <script src="lib/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        $(window).on('scroll', function() {
-            if($(window).scrollTop()) {
-                $('header').addClass('black');
-            }
-            else {
-                $('header').removeClass('black');
-            }
-        })
-    </script>
     <title>Document</title>
 </head>
-<body>
-    <div class="paracontainer">
-        <header>
+<body>   
+        <header>     
             <img src="icons/stars.svg" alt="Star">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">My projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#projects">My projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </header>
+            <div class="toggle">
+                    <i class="fas fa-bars menu"></i>
+            </div>       
+        </header>   
         <section>
             <figure>
                 <img src="#" alt="">
             </figure>
             <article>
-                <h1>Hello daftcode!</h1>
-                <h3>Lorem Ipsum dolor sit amet</h3>
+                <h1>Dzień dobry Daftcode</h1>
+                <h3>Zgłaszam się na letnie praktyki! </h3>
             </article>
         </section>
-    </div>
-    <div class='icons'>
-        <ul>
-            <li><i class="icon-html5"></i></li>
-            <li><i class="icon-css3"></i></li>
-            <li><i class="icon-javascript"></i></li>
-            <li><i class="icon-jquery"></i></li>
-            <li><img src="icons/lf2.svg" alt="Lf"></li>
-            <li><img src="icons/ps.svg" alt="Ps"></li>
-            <li><img src="icons/ai.svg" alt="Ai"></li>
-        </ul>
-    </div>
-    <div class="projects">
-        <ul>
-            <li><a>PSD to HTML <br> HTML CSS </a><img src="icons/github3.svg" alt="github"></li>
-            <li><a>ColorGame project <br> HTML CSS JS </a><img src="icons/github3.svg" alt="github"></li>
-            <li><a>To do List <br> HTML CSS jQuery </a><img src="icons/github3.svg" alt="github"></li>
-            <li><a>Battleship Game <br> HTML CSS JS </a><img src="icons/github3.svg" alt="github"></li>
-            <li><a>Nvm co tu <br> HTML CSS JS </a><img src="icons/github3.svg" alt="github"></li>
-            <li><a>Nvm co tu <br> HTML CSS JS </a><img src="icons/github3.svg" alt="github"></li>
-        </ul>
-    </div>
-    <footer>
-        <img src="icons/ziggy.svg" alt="zs">
-        <p>Copyright chuj judym</p>
-        <p>Contact: marekjudym@chuj.pl</p>
-    </footer>
-    
+        <div class='icons'>
+            <ul>
+                <li><i class="icon-html5"></i></li>
+                <li><i class="icon-css3"></i></li>
+                <li><i class="icon-javascript"></i></li>
+                <li><i class="icon-jquery"></i></li>
+                <li><img src="icons/lf2.svg" alt="Lf"></li>
+                <li><img src="icons/ps.svg" alt="Ps"></li>
+                <li><img src="icons/ai.svg" alt="Ai"></li>
+            </ul>
+        </div>
+        <div id="projects">
+            <ul>
+                <li><a>PSD to HTML <br> HTML CSS </a><p><a target="_blank" href="https://uuczek.github.io/Treehouse/"> <img src="icons/browser.svg" alt="github"></a><a target="_blank" href="https://github.com/uuczek/Treehouse"> <img src="icons/github3.svg" alt="github"></a></p></li>
+                <li><a>Battleship Game<br> HTML CSS JS </a><p><a target="_blank" href="https://uuczek.github.io/ships/"> <img src="icons/browser.svg" alt="github"></a><a target="_blank" href="https://github.com/uuczek/ships"> <img src="icons/github3.svg" alt="github"></a></p></li>
+                <li><a>Memory Game<br> HTML CSS JS </a><p><a target="_blank" href="https://uuczek.github.io/memoryGame/"> <img src="icons/browser.svg" alt="github"></a><a target="_blank" href="https://github.com/uuczek/memoryGame"> <img src="icons/github3.svg" alt="github"></a></p></li>
+                <li><a>Portfolio page <br> HTML CSS jQuery </a><p><a target="_blank" href="https://uuczek.github.io/"> <img src="icons/browser.svg" alt="github"></a><a target="_blank" href="https://github.com/uuczek/uuczek.github.io"> <img src="icons/github3.svg" alt="github"></a></p></li>
+                <li><a>To do List<br> HTML CSS jQuery </a><p><a target="_blank" href="https://uuczek.github.io/todo-list/"> <img src="icons/browser.svg" alt="github"></a><a target="_blank" href="https://github.com/uuczek/todo-list"> <img src="icons/github3.svg" alt="github"></a></p></li>
+                <li><a>ColorGame <br> HTML CSS JS </a><p><a target="_blank" href="https://uuczek.github.io/colorGame/"> <img src="icons/browser.svg" alt="github"></a><a target="_blank" href="https://github.com/uuczek/colorGame"> <img src="icons/github3.svg" alt="github"></a></p></li>
+            </ul>
+        </div>
+        <footer id="contact">
+            <p>Contact: <a href="mailto:marek.jachym@gmail.com">marek.jachym@gmail.com</a></p>
+            <p>© Copyright 2018 <a href="https://github.com/uuczek">github.com/uuczek</a></p>
+            <img src="icons/ziggy.svg" alt="zs">
+        </footer> 
+        <script src="script.js"></script>   
 </body>
 </html>
+
+
