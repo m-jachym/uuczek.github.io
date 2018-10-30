@@ -31,7 +31,7 @@ header {
 
 header.black {
     
-    background: rgba(0,0,0, 0.95);
+    background: rgba(0,0,0,1);
     transition: background 0.5s;
 }
 
@@ -97,7 +97,7 @@ section {
 section figure {
     height: 200px;
     width: 150px;
-    background: url('img/ryj.jpg') no-repeat center;
+    background: url('img.jpg') no-repeat center;
     background-size: cover;
     margin-right: 100px;
     
