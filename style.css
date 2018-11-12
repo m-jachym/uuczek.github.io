@@ -104,6 +104,10 @@ section figure {
     
 }
 
+section img {
+    height: 60px;
+}
+
 section article h1{
     font-size: 2.6rem;
 }
