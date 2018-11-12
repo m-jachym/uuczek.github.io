@@ -97,16 +97,16 @@ section {
 section figure {
     height: 200px;
     width: 150px;
-    background: url('img.jpg') no-repeat center;
+    background: url('img/IMG_20181112_151122_242.jpg') no-repeat center;
     background-size: cover;
     margin-right: 100px;
     
     
 }
 
-section img {
-    height: 60px;
-}
+
+
+
 
 section article h1{
     font-size: 2.6rem;
